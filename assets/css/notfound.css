@@ -1,0 +1,28 @@
+@font-face {
+  font-family: main-font;
+  src: url(../fonts/Cogeen-PersonalUse.woff)
+}
+@font-face {
+  font-family: footer-font;
+  src: url(../fonts/Pluton.woff)
+}
+.h1notfound {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  color: white;
+  font-family: main-font;
+}
+#span {
+  font-family: footer-font;
+  color: white;
+}
+#h3laaarge {
+  color: white;
+}
+.h3notfound {
+  font-family: main-font;
+  color: white;
+}

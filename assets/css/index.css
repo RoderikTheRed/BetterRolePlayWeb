@@ -1,0 +1,122 @@
+@font-face {
+  font-family: main-font;
+  src: url(../fonts/Cogeen-PersonalUse.woff)
+}
+@font-face {
+  font-family: footer-font;
+  src: url(../fonts/Pluton.woff)
+}
+@font-face {
+  font-family: navbar-font;
+  src: url(../fonts/Mighty-Kingdom.woff)
+}
+body {
+  font-family: main-font;
+  font-weight: lighter;
+  letter-spacing: 1px;
+}
+.headline h1 {
+  color: white;
+  text-align: center;
+  font-size: 70px;
+}
+.headline h1 span {
+  color: #9276C8;
+}
+.headline h3 {
+  color: white;
+  text-align: center;
+}
+.searchbar {
+  text-align: center;
+}
+.searchbar input {
+  width: 40%;
+  padding: 12px 18px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background: #1F222C;
+  border-color: white;
+  border-radius: 4px;
+  color: white;
+}
+.searchbar button[type="submit"] {
+  border-color: #9276C8;
+  background-color: #9276C8;
+  font-size: 20px;
+}
+.searchbar i {
+  color: white;
+}
+.searchbar button[type="submit"]:hover {
+  background-color: #9276C8;
+  color: #1F222C;
+  border-color: #9276C8;
+}
+.searchbar button[type="button"] {
+  color: white;
+  border-color: #9276C8;
+  background-color: #9276C8;
+  font-size: 20px;
+}
+.col {
+  padding: 0;
+  position: sticky;
+  width: 15.75%;
+}
+.container-normal:hover {
+  cursor: pointer;
+}
+.container-normal img {
+  background-color: #22273B;
+  border-radius: 15px;
+  position: absolute;
+  z-index: 3;
+}
+.container-normal-1 {
+  position: sticky;
+  left: 30px;
+  top: 30px;
+  width: 256px;
+  height: 350px;
+  padding: 8px;
+}
+.container-normal-2 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #2D3748;
+  border-radius: 10px;
+}
+.container-normal-2:hover {
+  background-color: #202733;
+}
+.container-normal-2 input[id=clicks]{
+  color: white;
+  position: absolute;
+  background-color: #4A5568;
+  border: 2px solid #4A5568;
+  border-radius: 8px;
+  left: 55%;
+  top: 7%;
+  height: 22px;
+  width: 100px;
+  font-family: sans-serif;
+  text-align: center;
+  padding: 10px;
+  box-shadow: #4A5568;
+}
+.container-normal-2 h5 {
+  position: absolute;
+  color: white;
+  font-family: sans-serif;
+  top: 40%;
+  left: 4%;
+}
+.container-normal-2 p {
+  position: absolute;
+  color: #808080;
+  font-family: sans-serif;
+  left: 4%;
+  bottom: 10%;
+}

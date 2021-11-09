@@ -1,0 +1,103 @@
+@font-face {
+  font-family: main-font;
+  src: url(../fonts/Cogeen-PersonalUse.woff)
+}
+@font-face {
+  font-family: footer-font;
+  src: url(../fonts/Pluton.woff)
+}
+@font-face {
+  font-family: navbar-font;
+  src: url(../fonts/Mighty-Kingdom.woff)
+}
+.headline {
+  font-family: main-font;
+  text-decoration: underline;
+  color: white;
+}
+.container {
+  position: relative;
+  left: 5%;
+  background-color: #14161E;
+  padding: 10px;
+  margin: 10px;
+  width: 93%;
+}
+.fa-plus-circle {
+  color: white;
+}
+.create {
+  font-family: main-font;
+  text-decoration: underline;
+  color: white;
+  text-align: center;
+}
+.domain {
+  text-align: center;
+}
+.domain label {
+  color: white;
+  font-family: main-font;
+}
+.domain input {
+  color: white;
+  width: 40%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: #14161E;
+  border-radius: 6px;
+  border-color: #ABABAB;
+}
+.domain input[id="ending"] {
+  width: 30%;
+  color: white;
+}
+.domain button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 6px;
+  font-family: main-font;
+  font-size: 25px;
+}
+.domain select {
+  width: 20%;
+  height: 40px;
+  -moz-padding-start: calc(10px - 3px);
+  padding-left: 10px;
+  background-color: #14161E;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  border-radius: 5px;
+}
+.active {
+  background: #14161E;
+}
+@media screen and (min-width: 400px) {
+  footer {
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+  }
+  label {
+      display:block;
+  }
+}
+@media screen and (max-width: 400px) {
+  .domain select {
+    width: 100%;
+  }
+  .domain input {
+    width: 100%;
+  }
+  .domain input[id="ending"] {
+    width: 100%;
+  }
+}

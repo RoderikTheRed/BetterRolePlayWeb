@@ -1,0 +1,58 @@
+@font-face {
+  font-family: main-font;
+  src: url(../fonts/Cogeen-PersonalUse.woff)
+}
+@font-face {
+  font-family: footer-font;
+  src: url(../fonts/Pluton.woff)
+}
+@font-face {
+  font-family: navbar-font;
+  src: url(../fonts/Mighty-Kingdom.woff)
+}
+.headline {
+  color: white;
+  font-family: main-font;
+  text-decoration: underline;
+}
+.container {
+  position: relative;
+  left: 5%;
+  background-color: #14161E;
+  padding: 10px;
+  margin: 10px;
+  width: 93%;
+}
+.form-1 label {
+  font-family: main-font;
+  color: white;
+  font-size: 30px;
+}
+.form-1 span {
+  font-family: main-font;
+  color: white;
+  font-size: 14px;
+}
+.form-1 input {
+  color: white;
+  width: 40%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: #14161E;
+  border-radius: 6px;
+  border-color: #ABABAB;
+}
+.form-1 button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 27px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 6px;
+  font-family: main-font;
+  font-size: 25px;
+}

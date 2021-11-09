@@ -1,0 +1,50 @@
+<?php
+$url = $_SERVER['HTTP_HOST'];
+
+$ending = str_replace("betterroleplay.", "", $url);
+$ending1 = str_replace("discord.", "", $ending);
+$ending2 = str_replace("roleplay.", "", $ending1)
+$final_ending = str_replace("brp.", "", $ending2);
+
+require("../../mysql.php");
+
+$sql = "SELECT * FROM ".$final_ending." WHERE ENDING = 'rosev'";
+
+$stmt = $mysql->prepare($sql);
+
+$stmt->execute();
+
+$rowCount = $stmt->rowCount();
+
+if($rowCount == 0) {
+header("Location: ../notfound.php");
+} else {
+?>
+<!DOCTYPE html>
+<html>
+<head>
+<title>rosev</title>
+<meta property="og:site_name" content="You have been invited to join a server!">
+<meta property="og:title" content="BetterRolePlay - rosev">
+<meta property="og:image" content="https://cdn.discordapp.com/icons/825757244485795880/cea6faa4fa3f3897c396321d421731a5.png?size=128">
+<meta property="twitter:card" content="summary">
+<meta property="twitter:title" content="BetterRolePlay - rosev">
+<meta property="twitter:image" content="https://cdn.discordapp.com/icons/825757244485795880/cea6faa4fa3f3897c396321d421731a5.png?size=128">
+<meta name="theme-color" content="#e5bfff">
+<meta http-equiv="refresh" content="0; url=https://discord.gg/rosev">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src='/cdn-cgi/bm/cv/669835187/api.js'></script></head>
+<script type="text/javascript">
+window.location.href = "https://discord.gg/rosev"
+</script>
+<body class="bg-gray-900 min-h-screen text-white text-center">
+<br><br><br><br><br><br>
+<h1 class="text-5xl font-bold pt-32 align mt-36">Redirecting to your destination...</h1>
+<span class="text-2xl">Didn't get redirected? <a class="text-blue-500" href="https://discord.gg/rosev">Click here</a>.</span>
+<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+<script type="text/javascript">(function(){window['__CF$cv$params']={r:'66465e7f3c8e05bf',m:'cb98e96870f189d265fb6908a63f7b5facf41406-1624542056-1800-AdpJIz+AGivzzT7wHxBzT2XXkb4IARvkB6NxfJsTgmXFTj1wp5fc5Hpqqj9g9jwL+Jr0skJ25jxOlzR1TJalWJfKhKW6daz2o0zPVPL32VPECuWuxcArU5d56ffcTC4G6g==',s:[0xbf231a8949,0x78bea0467e],}})();</script></body>
+</html>
+
+<?php
+}
+?>

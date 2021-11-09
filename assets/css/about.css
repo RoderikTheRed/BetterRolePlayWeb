@@ -1,0 +1,30 @@
+@font-face {
+  font-family: main-font;
+  src: url(../fonts/Cogeen-PersonalUse.woff)
+}
+@font-face {
+  font-family: footer-font;
+  src: url(../fonts/Pluton.woff)
+}
+@font-face {
+  font-family: navbar-font;
+  src: url(../fonts/Mighty-Kingdom.woff)
+}
+.h1headline {
+  font-family: main-font;
+  color: white;
+  text-align: center;
+}
+#profilepicture {
+  border-radius: 50%;
+}
+.col {
+  color: white;
+  font-family: footer-font;
+  text-align: center;
+}
+#role-headline {
+  color: white;
+  font-family: main-font;
+  text-align: center;
+}
